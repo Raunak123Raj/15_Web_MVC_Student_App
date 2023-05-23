@@ -32,7 +32,8 @@ public class StudentService {
 		
 		BeanUtils.copyProperties(s, entity);
 		entity.setTimings(Arrays.toString(s.getTimings()));
-		  repo.save(entity);
+
+		repo.save(entity);
 		
 		return true;
 		
